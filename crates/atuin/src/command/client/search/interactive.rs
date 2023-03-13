@@ -401,6 +401,10 @@ impl State {
             KeyCode::Left => {
                 self.search.input.left();
             }
+            KeyCode::Char('h') if ctrl => {
+                //self.search.input.left();
+                self.search.input.back();
+            }
             KeyCode::Char('b') if ctrl => {
                 self.search.input.left();
             }
